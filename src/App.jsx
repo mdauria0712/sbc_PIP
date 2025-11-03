@@ -183,6 +183,10 @@ function ChatbotWidget() {
 
 /* --------------------------- Styles --------------------------- */
 const styles = {
+   body: {
+    margin: 0,
+    padding: 0,
+  },
   app: {
     fontFamily: "Inter, system-ui, Arial, sans-serif",
     minHeight: "100vh",
