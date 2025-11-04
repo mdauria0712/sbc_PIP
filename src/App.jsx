@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 function App() {
   return (
+  
     <div style={styles.app}>
       <Header />
 
@@ -183,10 +184,6 @@ function ChatbotWidget() {
 
 /* --------------------------- Styles --------------------------- */
 const styles = {
-   body: {
-    margin: 0,
-    padding: 0,
-  },
   app: {
     fontFamily: "Inter, system-ui, Arial, sans-serif",
     minHeight: "100vh",
@@ -234,22 +231,22 @@ const styles = {
   gameMeta: { fontSize: 12, color: "#555" },
 
   main: {
-    flex: 1,
-    display: "grid",
-    gridTemplateColumns: "320px 1fr",
-    gap: 16,
-    padding: 16,
-  },
+  flex: 1,
+  display: "grid",
+  gridTemplateColumns: "380px 1fr",  // Wider sidebar
+  gap: 16,
+  padding: 16,
+},
 
-  /* Left panel */
-  sidebar: {
-    background: "white",
-    border: "1px solid #e6e7ee",
-    borderRadius: 12,
-    padding: 12,
-    height: "fit-content",
-  },
-  sidebarTitle: { margin: "0 0 10px", fontSize: 16, fontWeight: 700 },
+sidebar: {
+  background: "white",
+  border: "1px solid #e6e7ee",
+  borderRadius: 12,
+  padding: 12,
+  height: "fit-content",
+  overflowX: "auto",  // Scroll if still needed
+},
+  sidebarTitle: { margin: "0 0 10px", fontSize: 16, fontWeight: 700,},
   table: {
     width: "100%",
     borderCollapse: "collapse",
